@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes en CSS</title>
+</head>
+<body>
+    <h1>Bordes en CSS</h1>
+    <p>CSS3 permite crear bordes redondeados con la propiedad <code>border-radius</code>, lo que facilita dar un aspecto más moderno a los elementos.</p>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Ejemplo</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <pre>
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+                    </pre>
+                </td>
+                <td>Aplica un borde redondeado de 10 píxeles en todas las esquinas de la caja, compatible con navegadores como Firefox y Chrome.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>
+border-radius: 20px 10px;
+                    </pre>
+                </td>
+                <td>Redondea solo las esquinas opuestas de un elemento, donde 20px se aplica a la esquina superior izquierda e inferior derecha, y 10px a las otras dos.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>
+border-radius: 15px 30px 20px 5px;
+                    </pre>
+                </td>
+                <td>Redondea cada esquina de la caja de forma personalizada en el orden: superior izquierda, superior derecha, inferior derecha, e inferior izquierda.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>
+border-radius: 20px / 10px;
+                    </pre>
+                </td>
+                <td>Usa valores separados por una barra para crear bordes elípticos, donde el valor a la izquierda indica el radio horizontal y el de la derecha el vertical.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>div { border: 2px solid red; }</pre>
+                </td>
+                <td>Establece un borde rojo de 2 píxeles alrededor de todos los <code>div</code>.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>p { border-bottom: 1px dashed black; }</pre>
+                </td>
+                <td>Aplica un borde inferior negro y punteado a todos los párrafos.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>h1 { border: 5px double blue; }</pre>
+                </td>
+                <td>Establece un borde azul de 5 píxeles y doble alrededor de todos los encabezados <code>&lt;h1&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>img { border-radius: 50%; }</pre>
+                </td>
+                <td>Aplica bordes redondeados al <code>img</code>, formando un círculo para imágenes cuadradas.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>section { border-style: dotted dashed solid double; }</pre>
+                </td>
+                <td>Aplica diferentes estilos de borde a cada lado: puntos, guiones, sólido y doble.</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <a href="index.html">Volver atrás</a>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid en CSS</title>
+</head>
+<body>
+    <h1>Grid en CSS</h1>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Ejemplo</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <pre>.container { display: grid; }</pre>
+                </td>
+                <td>Establece un contenedor como un grid container.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>.container { grid-template-columns: repeat(3, 1fr); }</pre>
+                </td>
+                <td>Crea tres columnas del mismo tamaño en el grid.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>.item { grid-column: span 2; }</pre>
+                </td>
+                <td>Un elemento puede ocupar dos columnas en el grid.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>.container { gap: 10px; }</pre>
+                </td>
+                <td>Establece un espacio de 10 píxeles entre las filas y columnas del grid.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>.container { grid-template-rows: 100px auto; }</pre>
+                </td>
+                <td>Crea dos filas, la primera de 100 píxeles y la segunda automática.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>.item { grid-area: 1 / 1 / 2 / 3; }</pre>
+                </td>
+                <td>Ubica un elemento en la primera fila y ocupa las dos primeras columnas del grid.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>.container { grid-template-areas: "header header" "main aside"; }</pre>
+                </td>
+                <td>Define áreas en el grid, donde 'header' ocupa las dos primeras columnas en la primera fila.</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <a href="index.html">Volver atrás</a>
+</body>
+</html>

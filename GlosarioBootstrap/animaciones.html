@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones en CSS</title>
+</head>
+<body>
+    <h1>Animaciones en CSS</h1>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Ejemplo</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <pre>@keyframes nombreAnimacion {}</pre>
+                </td>
+                <td>Define una animación con un nombre específico.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>@keyframes nombreAnimacion { from { opacity: 0; } to { opacity: 1; } }</pre>
+                </td>
+                <td>Ejemplo de animación que hace que un elemento se desvanezca desde invisible a visible.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>div { animation: nombreAnimacion 2s ease-in; }</pre>
+                </td>
+                <td>Aplica la animación definida a un <code>div</code> durante 2 segundos.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>div { animation: nombreAnimacion 2s infinite; }</pre>
+                </td>
+                <td>Repite la animación indefinidamente.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>div { animation-delay: 1s; }</pre>
+                </td>
+                <td>Retrasa el inicio de la animación por 1 segundo.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>div { animation-direction: alternate; }</pre>
+                </td>
+                <td>Reversa la dirección de la animación en cada ciclo.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>div { animation-fill-mode: forwards; }</pre>
+                </td>
+                <td>Mantiene el estado final de la animación al terminar.</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <a href="index.html">Volver atrás</a>
+</body>
+</html>

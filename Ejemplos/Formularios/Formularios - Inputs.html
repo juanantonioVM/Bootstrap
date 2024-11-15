@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="C:\Users\JuanAntonioD\Desktop\Diseño\Bootstrap\bootstrap-5.3.3-dist\css\bootstrap.min.css">
+  <script src="C:\Users\JuanAntonioD\Desktop\Diseño\Bootstrap\bootstrap-5.3.3-dist\js\bootstrap.bundle.min.js"></script>
+	<title>Formularios - Inputs</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col mt-3 mb-3">
+        <form action="">
+          <label for="pwd" class="form-label">Password</label>
+          <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Introduce contraseña...">
+          <!--  -->
+          <hr>
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="correo" name="correo" placeholder="Introduce tu e-mail...">
+          <!--  -->
+          <hr>
+          <label for="comment" class="form-label">Comentarios</label>
+          <textarea class="form-control" rows="5" id="comment" name="comment" placeholder="Escribe tus comentarios..."></textarea>
+          <!--  -->
+          <hr>
+          <label for="lista" class="form-label">Selecciona una opción:</label>
+          <select name="lista" id="lista" class="form-select">
+            <option value="uno">Opción 1</option>
+            <option value="dos">Opción 2</option>
+            <option value="tres">Opción 3</option>
+            <option value="otra">Otra</option>
+          </select>
+          <br>
+          <!--  -->
+          <hr>
+          <select class="form-select">
+            <option selected>Abre este menú</option>
+            <option value="uno">Opción 1</option>
+            <option value="dos">Opción 2</option>
+            <option value="tres">Opción 3</option>
+          </select>
+          <!--  -->
+          <hr>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="op1" value="checked" checked>
+            <label for="op1" class="form-check-label">Checked checkbox</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="op2" value="default">
+            <label for="op2" class="form-check-label">Default checkbox</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="op3" value="" disabled>
+            <label for="op3" class="form-check-label">Disabled checkbox</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="op4" value="" disabled checked>
+            <label for="op4" class="form-check-label">Disabled checked checkbox</label>
+          </div>
+          <!--  -->
+          <hr>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="op1" value="checked" checked>
+            <label for="op1" class="form-check-label">Checked checkbox</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="op2" value="default">
+            <label for="op2" class="form-check-label">Default checkbox</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="op3" value="" disabled>
+            <label for="op3" class="form-check-label">Disabled checkbox</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="op4" value="" disabled checked>
+            <label for="op4" class="form-check-label">Disabled checked checkbox</label>
+          </div>
+          <!--  -->
+          <br><hr>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="opcionradio" id="radio1" value="checked" checked>
+            <label for="radio1" class="form-check-label">Checked radio</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="opcionradio" id="radio2" value="default">
+            <label for="radio2" class="form-check-label">Default radio</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="opcionradio" id="radio3" value="" disabled>
+            <label for="radio3" class="form-check-label">Disabled radio</label>
+          </div>
+          <!--  -->
+          <hr>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="opcionradio2" id="radio1" value="checked" checked>
+            <label for="radio1" class="form-check-label">Checked radio</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="opcionradio2" id="radio2" value="default">
+            <label for="radio2" class="form-check-label">Default radio</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="opcionradio2" id="radio3" value="" disabled>
+            <label for="radio3" class="form-check-label">Disabled radio</label>
+          </div>
+          <!--  -->
+          <br><hr>
+          <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="op1" value="checked" checked>
+            <label for="op1" class="form-check-label">Checked switch checkbox</label>
+          </div>
+          <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="op2" value="default">
+            <label for="op2" class="form-check-label">Default switch checkbox</label>
+          </div>
+          <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="op3" value="" disabled>
+            <label for="op3" class="form-check-label">Disabled switch checkbox</label>
+          </div>
+          <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="op4" value="" disabled checked>
+            <label for="op4" class="form-check-label">Disabled checked switch checkbox</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

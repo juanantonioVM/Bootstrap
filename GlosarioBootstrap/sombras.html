@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras en CSS</title>
+</head>
+<body>
+    <h1>Sombras en CSS</h1>
+    <p>La propiedad <code>box-shadow</code> permite crear sombras en los elementos, ajustando desplazamiento, difuminación y color.</p>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Ejemplo</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <pre>
+box-shadow: 5px 5px 5px #888;
+                    </pre>
+                </td>
+                <td>Crea una sombra desplazada 5px a la derecha y abajo, con 5px de difuminado y color gris.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>
+box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.5);
+                    </pre>
+                </td>
+                <td>Sombra desplazada 5px hacia la izquierda y arriba, con 10px de difuminado y semitransparente.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>
+box-shadow: 3px 3px 3px #aaa inset;
+                    </pre>
+                </td>
+                <td>Crea una sombra interna dentro del elemento, ideal para darle un efecto de profundidad.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>
+text-shadow: 2px 2px #ff0000;
+                    </pre>
+                </td>
+                <td>Aplica una sombra roja al texto, desplazada 2px a la derecha y abajo.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>div { box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); }</pre>
+                </td>
+                <td>Aplica una sombra de 5 píxeles a la derecha y abajo, con un difuminado de 10 píxeles.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>h1 { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); }</pre>
+                </td>
+                <td>Agrega una sombra de texto negra a los encabezados <code>&lt;h1&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>button { box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); }</pre>
+                </td>
+                <td>Aplica una sombra interior a los botones, dando un efecto de profundidad.</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>p { text-shadow: 0px 0px 3px blue; }</pre>
+                </td>
+                <td>Aplica una sombra azul suave alrededor del texto de todos los párrafos.</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <a href="index.html">Volver atrás</a>
+</body>
+</html>

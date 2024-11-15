@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="C:\Users\JuanAntonioD\Desktop\Diseño\Bootstrap\bootstrap-5.3.3-dist\css\bootstrap.min.css">
+	<script src="C:\Users\JuanAntonioD\Desktop\Diseño\Bootstrap\bootstrap-5.3.3-dist\js\bootstrap.bundle.min.js"></script>
+	<title>Imágenes</title>
+	<style type="text/css">
+		.columna {
+			background: #f2f2f2;
+			border: 1px solid #424242;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<!-- Imágenes bordes -->
+			<div class="col">
+				<h3>Bordes de imágenes</h3>
+				<img src="./images/perro1.jpg" title="Shar pei" class="rounded">
+				<img src="./images/perro2.jpg" title="Labrador-retriever" class="rounded-circle">
+				<img src="./images/perro3.jpg" title="Beagle" class="img-thumbnail">
+			</div>
+			<hr>
+			<!-- Alinear imágenes -->
+			<div class="col">
+				<h3>Alineación de imágenes</h3>
+				<img src="./images/perro1.jpg" title="Shar pei" class="float-end">
+				<img src="./images/perro2.jpg" title="Labrador-retriever" class="float-start">
+				<img src="./images/perro3.jpg" title="Beagle" class="mx-auto d-block">
+			</div>
+			<hr>
+			<!-- Imágenes responsive -->
+			<div class="col">
+				<h3>Imágenes responsive</h3>
+				<p>La clase <code>.img-fluid</code> permite reescalar la imagen. Puedes comprobarlo cambiando las dimensiones de la ventana del navegador.</p>
+				<img src="./images/vegamedia.jpg" title="CES Vega Media" class="img-fluid">
+			</div>
+			<hr>
+		</div>
+		<!-- Gutter -->
+			<!-- Ejemplo con -->
+		<h3>Gutters</h3>
+		<div class="row">
+			<div class="columna col-4">
+				<img src="./images/perro1.jpg" alt="Shar pei" title="Shar pei" class="img-fluid">
+			</div>
+		</div>
+		<br>
+			<!-- Ejemplo sin -->
+		<h3>No Gutters</h3>
+		<div class="row g-0">
+			<div class="columna col-4">
+				<img src="./images/perro1.jpg" alt="Shar pei" title="Shar pei" class="img-fluid">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
