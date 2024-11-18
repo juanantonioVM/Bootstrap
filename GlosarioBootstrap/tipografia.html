@@ -3,63 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fuentes y Tipografía en CSS</title>
+    <title>Fuentes y Tipografía en Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Grid de Bootstrap</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Fuentes y Tipografía en CSS</h1>
-    <table border="1" cellpadding="10" cellspacing="0">
-        <thead>
-            <tr>
-                <th>Ejemplo</th>
-                <th>Descripción</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <pre>body { font-family: Arial, sans-serif; }</pre>
-                </td>
-                <td>Aplica la fuente Arial (o una fuente sans-serif alternativa) al texto del cuerpo.</td>
-            </tr>
-            <tr>
-                <td>
-                    <pre>h1 { font-size: 24px; }</pre>
-                </td>
-                <td>Establece el tamaño de la fuente a 24 píxeles para todos los encabezados <code>&lt;h1&gt;</code>.</td>
-            </tr>
-            <tr>
-                <td>
-                    <pre>p { font-weight: bold; }</pre>
-                </td>
-                <td>Aplica negrita al texto de todos los párrafos.</td>
-            </tr>
-            <tr>
-                <td>
-                    <pre>h2 { font-style: italic; }</pre>
-                </td>
-                <td>Aplica cursiva al texto de todos los encabezados <code>&lt;h2&gt;</code>.</td>
-            </tr>
-            <tr>
-                <td>
-                    <pre>h1 { text-align: center; }</pre>
-                </td>
-                <td>Centra el texto de todos los encabezados <code>&lt;h1&gt;</code>.</td>
-            </tr>
-            <tr>
-                <td>
-                    <pre>li { letter-spacing: 2px; }</pre>
-                </td>
-                <td>Aplica un espaciado de 2 píxeles entre las letras de todos los elementos de lista.</td>
-            </tr>
-            <tr>
-                <td>
-                    <pre>blockquote { font-size: 18px; line-height: 1.5; }</pre>
-                </td>
-                <td>Establece un tamaño de fuente de 18 píxeles y una altura de línea de 1.5 para citas en bloque.</td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <a href="index.html">Volver atrás</a>
+    <div class="container">
+        <h1>Fuentes y Tipografía en Bootstrap</h1>
+        <table border="1" cellpadding="10" cellspacing="0" class="table">
+            <thead>
+                <tr>
+                    <th>Ejemplo</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <pre>&lt;small class="text-muted"&gt;&lt;/small&gt;</pre>
+                    </td>
+                    <td>Texto en una fuente más clara que el texto principal.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>class="text-primary"</pre>
+                    </td>
+                    <td>Aplica un color de fondo azul al encabezado <code>&lt;h2&gt;</code>.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>class="bg-primary"</pre>
+                    </td>
+                    <td>Aplica un color de fondo azul a todos los <code>div</code>.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>class="display-*"</pre>
+                    </td>
+                    <td>Establece un estilo a la fuente de encabezado.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>class="lead"</pre>
+                    </td>
+                    <td>Resalta el párrafo al que se le aplica.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>&lt;mark&gt;Algo&lt;/mark&gt;</pre>
+                    </td>
+                    <td>Subraya un texto.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>&lt;del&gt;Algo&lt;/del&gt;</pre>
+                    </td>
+                    <td>Añade una línea sobre el texto.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>&lt;s&gt;Algo&lt;/s&gt;</pre>
+                    </td>
+                    <td>Añade una línea sobre el texto.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>&lt;ins&gt;Algo&lt;/ins&gt;</pre>
+                    </td>
+                    <td>Añade una línea bajo el texto.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>&lt;u&gt;Algo&lt;/u&gt;</pre>
+                    </td>
+                    <td>Añade una línea bajo el texto.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>&lt;strong&gt;Algo&lt;/strong&gt;</pre>
+                    </td>
+                    <td>Pone en negrita un texto.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>&lt;em&gt;Algo&lt;/em&gt;</pre>
+                    </td>
+                    <td>Pone en itálica o cursiva un texto.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>&lt;abbr title="Algo"&gt;ALG&lt;/abrr&gt;</pre>
+                    </td>
+                    <td>Crea una abreviatura.</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="index.html">Volver atrás</a>
+    </div>
 </body>
 </html>
