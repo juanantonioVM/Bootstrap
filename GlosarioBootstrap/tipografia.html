@@ -6,21 +6,52 @@
     <title>Fuentes y Tipografía en Bootstrap</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <title>Grid de Bootstrap</title>
     <style>
-        h1 {
-            text-align: center;
+        body {
+            background-image: url('./wave.png');
+            color: #1b5f86;
+        }
+        .table {
+            background-color: rgba(255, 242, 209, 0.7);
+            border-radius: 10px;
+        }
+        p.h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+        }
+        pre {
+            background-color: #cae1e5;
+            color: #1b5f86;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Consolas, monospace;
+        }
+        a {
+            background-color: #1b5f86;;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        a:hover {
+            color: #fff2d1;
+            text-shadow: 0 0 5px #1b5f86;
+        }
+        td, th {
+            vertical-align: middle;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Fuentes y Tipografía en Bootstrap</h1>
-        <table border="1" cellpadding="10" cellspacing="0" class="table">
-            <thead>
+        <p class="h1 text-center">Textos y tipografías</p>
+        <table border="1" cellpadding="10" cellspacing="0" class="table table-bordered text-center">
+            <thead class="table-dark">
                 <tr>
-                    <th>Ejemplo</th>
+                    <th>Clases</th>
                     <th>Descripción</th>
+                    <th>Ejemplo</th>
                 </tr>
             </thead>
             <tbody>
@@ -29,82 +60,158 @@
                         <pre>&lt;small class="text-muted"&gt;&lt;/small&gt;</pre>
                     </td>
                     <td>Texto en una fuente más clara que el texto principal.</td>
+                    <td><img src="./images/textos/muted.png" width="300"></td>
                 </tr>
                 <tr>
                     <td>
                         <pre>class="text-primary"</pre>
                     </td>
                     <td>Aplica un color de fondo azul al encabezado <code>&lt;h2&gt;</code>.</td>
+                    <td><img src="./images/textos/colortexto.png" width="300"></td>
                 </tr>
                 <tr>
                     <td>
                         <pre>class="bg-primary"</pre>
                     </td>
                     <td>Aplica un color de fondo azul a todos los <code>div</code>.</td>
+                    <td><img src="./images/textos/bg.png" width="300"></td>
                 </tr>
                 <tr>
                     <td>
                         <pre>class="display-*"</pre>
                     </td>
                     <td>Establece un estilo a la fuente de encabezado.</td>
+                    <td><img src="./images/textos/display.png" width="300"></td>
                 </tr>
                 <tr>
                     <td>
                         <pre>class="lead"</pre>
                     </td>
                     <td>Resalta el párrafo al que se le aplica.</td>
+                    <td><img src="./images/textos/lead.png" width="300"></td>
                 </tr>
                 <tr>
                     <td>
                         <pre>&lt;mark&gt;Algo&lt;/mark&gt;</pre>
                     </td>
                     <td>Subraya un texto.</td>
+                    <td><img src="./images/textos/mark.png" width="300"></td>
                 </tr>
                 <tr>
                     <td>
                         <pre>&lt;del&gt;Algo&lt;/del&gt;</pre>
                     </td>
                     <td>Añade una línea sobre el texto.</td>
+                    <td><img src="./images/textos/del.png" width="300"></td>
                 </tr>
                 <tr>
                     <td>
                         <pre>&lt;s&gt;Algo&lt;/s&gt;</pre>
                     </td>
                     <td>Añade una línea sobre el texto.</td>
+                    <td><img src="./images/textos/del.png" width="300"></td>
                 </tr>
                 <tr>
                     <td>
                         <pre>&lt;ins&gt;Algo&lt;/ins&gt;</pre>
                     </td>
                     <td>Añade una línea bajo el texto.</td>
+                    <td><img src="./images/textos/ins.png" width="300"></td>
                 </tr>
                 <tr>
                     <td>
                         <pre>&lt;u&gt;Algo&lt;/u&gt;</pre>
                     </td>
                     <td>Añade una línea bajo el texto.</td>
+                    <td><img src="./images/textos/ins.png" width="300"></td>
                 </tr>
                 <tr>
                     <td>
                         <pre>&lt;strong&gt;Algo&lt;/strong&gt;</pre>
                     </td>
                     <td>Pone en negrita un texto.</td>
+                    <td><img src="./images/textos/strong.png" width="300"></td>
                 </tr>
                 <tr>
                     <td>
                         <pre>&lt;em&gt;Algo&lt;/em&gt;</pre>
                     </td>
                     <td>Pone en itálica o cursiva un texto.</td>
+                    <td><img src="./images/textos/em.png" width="300"></td>
                 </tr>
                 <tr>
                     <td>
                         <pre>&lt;abbr title="Algo"&gt;ALG&lt;/abrr&gt;</pre>
                     </td>
                     <td>Crea una abreviatura.</td>
+                    <td><img src="./images/textos/abbr.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>class="text-(start/center/end)</pre>
+                    </td>
+                    <td>Alineación de textos.</td>
+                    <td><img src="./images/textos/alinear.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>class="text-(lowercase/uppercase/capitalize)</pre>
+                    </td>
+                    <td>Transformación de textos.</td>
+                    <td><img src="./images/textos/tran.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>class="fw-(bold/normal/light)</pre>
+                    </td>
+                    <td>Peso de la fuente.</td>
+                    <td><img src="./images/textos/peso.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>class="fst-(italic/normal)</pre>
+                    </td>
+                    <td>Cursiva de la fuente.</td>
+                    <td><img src="./images/textos/cursiva.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;blockquote&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+    &lt;footer class="blockquote-footer"&gt;Tu padre&lt;/footer&gt;
+&lt;/blockquote&gt;
+                        </pre>
+                    </td>
+                    <td>Blockquotes</td>
+                    <td><img src="./images/textos/blockquote.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>&lt;code&gt;&lt;/code&gt;</pre>
+                    </td>
+                    <td>Para resaltar fragmentos de código fuente que se muestran en línea con el texto.</td>
+                    <td><img src="./images/textos/code.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>&lt;pre&gt;&lt;/pre&gt;</pre>
+                    </td>
+                    <td>Para mostrar bloques de código.</td>
+                    <td><img src="./images/textos/pre.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>&lt;kbd&gt;&lt;/kbd&gt;</pre>
+                    </td>
+                    <td>Para resaltar combinaciones de teclas.</td>
+                    <td><img src="./images/textos/kbd.png" width="300"></td>
                 </tr>
             </tbody>
         </table>
-        <a href="index.html">Volver atrás</a>
+        <div class="text-center mt-4 mb-4">
+            <a href="index.html">Volver atrás</a>
+        </div>
     </div>
 </body>
 </html>
