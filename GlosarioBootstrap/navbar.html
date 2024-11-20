@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <title>Barras de navegación en Bootstrap</title>
+    <style>
+        body {
+            background-image: url('./wave.png');
+            color: #1b5f86;
+        }
+        .table {
+            background-color: rgba(255, 242, 209, 0.7);
+            border-radius: 10px;
+        }
+        p.h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+        }
+        pre {
+            background-color: #cae1e5;
+            color: #1b5f86;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Consolas, monospace;
+        }
+        a {
+            background-color: #1b5f86;;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        a:hover {
+            color: #fff2d1;
+            text-shadow: 0 0 5px #1b5f86;
+        }
+        td, th {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="h1 text-center">Barras de navegación</p>
+        <table border="1" cellpadding="10" cellspacing="0" class="table table-bordered text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Clases</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;nav class="navbar navbar-expand-sm bg-light"&gt;
+    &lt;div class="container-fluid"&gt;
+        &lt;ul class="navbar-nav"&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;Pestaña 1&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;Pestaña 2&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+                        </pre>
+                    </td>
+                    <td>Barra de navegación básica.</td>
+                    <td><img src="./images/navbar/basica.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;div class="container-fluid justify-content-center"&gt;
+
+&lt;nav class="navbar bg-light"&gt;
+                        </pre>
+                    </td>
+                    <td>Clase para añadir la barra en el centro.<br><br>Eliminamos el navbar-expand para que la barra se vea en vertical</td>
+                    <td><img src="./images/navbar/otrasclases.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;nav class="navbar navbar-expand-sm bg-light navbar-light"&gt;
+&lt;/nav&gt;
+                        </pre>
+                    </td>
+                    <td>Podemos cambiar los colores del fondo y de los elementos de la barra, con los mismos estilos que con los botones, textos, etc.</td>
+                    <td><img src="./images/navbar/color.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;nav class="navbar navbar-expand-sm bg-success navbar-dark"&gt;
+    &lt;div class="container-fluid"&gt;
+        &lt;!-- Nombre de la marca --&gt;
+        &lt;a class="navbar-brand" href="#"&gt;Empresa&lt;/a&gt;
+        &lt;!-- Enlaces --&gt;
+        &lt;ul class="navbar-nav"&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+                        </pre>
+                    </td>
+                    <td>Añadimos el nombre de la marca a la barra.</td>
+                    <td><img src="./images/navbar/brand.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;nav class="navbar navbar-expand-sm bg-success navbar-dark"&gt;
+    &lt;div class="container-fluid"&gt;
+        &lt;!-- Logotipo --&gt;
+        &lt;a class="navbar-brand" href="#"&gt;
+            &lt;img src="./logo.png" alt="Logo" width="30"&gt;
+        &lt;/a&gt;
+        &lt;!-- Enlaces --&gt;
+        &lt;ul class="navbar-nav"&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+                        </pre>
+                    </td>
+                    <td>Añadimos el logotipo de la marca a la barra.</td>
+                    <td><img src="./images/navbar/logo.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;nav class="navbar navbar-expand-sm bg-secondary navbar-dark"&gt;
+    &lt;div class="container-fluid"&gt;
+        &lt;!-- Logotipo --&gt;
+        &lt;a class="navbar-brand" href="#"&gt;
+            &lt;img src="./logo.png" alt="Logo" width="30"&gt;
+        &lt;/a&gt;
+
+        &lt;!-- Botón Toggler --&gt;
+        &lt;button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#navbar_plegable"&gt;
+            &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        
+        &lt;!-- Enlaces --&gt;
+        &lt;div class="collapse navbar-collapse" id="navbar_plegable"&gt;
+            &lt;ul class="navbar-nav"&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a class="nav-link active" href="#"&gt;Pestaña 1&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a class="nav-link active" href="#"&gt;Pestaña 2&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;       
+    &lt;/div&gt;
+&lt;/nav&gt;
+                        </pre>
+                    </td>
+                    <td>Barra de navegación plegable.</td>
+                    <td><img src="./images/navbar/plegable.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;nav class="navbar navbar-expand-sm bg-dark navbar-dark"&gt;
+    &lt;div class="container-fluid"&gt;
+        &lt;!-- Logotipo --&gt;
+        &lt;a class="navbar-brand" href="#"&gt;
+            &lt;img src="./logo.png" alt="Logo" width="30"&gt;
+        &lt;/a&gt;
+
+        &lt;!-- Botón Toggler --&gt;
+        &lt;button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#navbar_plegable"&gt;
+            &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        
+        &lt;!-- Enlaces --&gt;
+        &lt;div class="collapse navbar-collapse" id="navbar_plegable"&gt;
+            &lt;ul class="navbar-nav"&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a class="nav-link active" href="#"&gt;Pestaña 1&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;!-- Dropdown --&gt;
+                &lt;li class="nav-item dropdown"&gt;
+                    &lt;a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" 
+                    id="navbardrop"&gt;Dropdown&lt;/a&gt;
+                    &lt;div class="dropdown-menu"&gt;
+                        &lt;a class="dropdown-item" href="#"&gt;Subpestaña 1&lt;/a&gt;
+                        &lt;a class="dropdown-item" href="#"&gt;Subpestaña 2&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;       
+    &lt;/div&gt;
+&lt;/nav&gt;
+                        </pre>
+                    </td>
+                    <td>Barra de navegación plegable.</td>
+                    <td><img src="./images/navbar/dropdown.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;nav class="navbar navbar-expand-sm bg-dark navbar-dark"&gt;
+    &lt;div class="container-fluid"&gt;
+        &lt;!-- Logotipo --&gt;
+        &lt;a class="navbar-brand" href="#"&gt;
+            &lt;img src="./logo.png" alt="Logo" width="30"&gt;
+        &lt;/a&gt;
+
+        &lt;!-- Botón Toggler --&gt;
+        &lt;button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#navbar_plegable"&gt;
+            &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        
+        &lt;div class="collapse navbar-collapse" id="navbar_plegable"&gt;
+            &lt;!-- Enlaces --&gt;
+            &lt;ul class="navbar-nav me-auto"&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a class="nav-link active" href="#"&gt;Pestaña 1&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a class="nav-link" href="#"&gt;Pestaña 2&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!-- Formulario --&gt;
+            &lt;form class="d-flex" action="#"&gt;
+                &lt;input class="form-control me-2" type="text" placeholder="Buscar..."&gt;
+                &lt;button class="btn btn-outline-light" type="submit"&gt;Buscar&lt;/button&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;       
+    &lt;/div&gt;
+&lt;/nav&gt;
+                        </pre>
+                    </td>
+                    <td>Barra de navegación con formulario.</td>
+                    <td><img src="./images/navbar/form.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;nav class="navbar fixed-top navbar-expand-sm bg-light navbar-light"&gt;
+&lt;/nav&gt;
+                        </pre>
+                    </td>
+                    <td>NAVBAR fijada a la parte superior.</td>
+                    <td><img src="./images/navbar/fixedtop.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;nav class="navbar fixed-bottom navbar-expand-sm bg-light navbar-light"&gt;
+&lt;/nav&gt;
+                        </pre>
+                    </td>
+                    <td>NAVBAR fijada a la parte inferior.</td>
+                    <td><img src="./images/navbar/fixedbottom.jpg" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;nav class="navbar sticky-top navbar-expand-sm bg-light navbar-light"&gt;
+&lt;/nav&gt;
+                        </pre>
+                    </td>
+                    <td>NAVBAR fijada a la parte superior.</td>
+                    <td><img src="./images/navbar/fixedtop.png" width="300"></td>
+                </tr>
+                <tr>
+            </tbody>
+        </table>
+        <div class="text-center mt-4 mb-4">
+            <a href="index.html">Volver atrás</a>
+        </div>
+    </div>
+</body>
+</html>
