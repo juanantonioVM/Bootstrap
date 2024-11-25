@@ -1,0 +1,19 @@
+.anclas:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    border-top: 2px solid #000;
+    transition: border-top 0.3s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 300px; /* Mantiene la proporción de la imagen */
+    margin: 0 auto; /* Centra la imagen */
+}
+
+/* Otros ajustes generales */
+.container, .row, .col {
+    padding: 0;
+    margin: 0;
+}
+
