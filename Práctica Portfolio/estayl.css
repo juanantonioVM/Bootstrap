@@ -10,9 +10,14 @@ body {
 }
 
 .carousel-image {
-    width: 100%;
+    width: 50%;
     height: 300px; /* Mantiene la proporción de la imagen */
     margin: 0 auto; /* Centra la imagen */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(10%) sepia(50%) saturate(300%) hue-rotate(200deg) brightness(50%) contrast(120%);
 }
 
 /* Otros ajustes generales */
@@ -25,7 +30,12 @@ body {
     width: 100%;
     border-radius: 5px;
 }
-
+.carousel-inner img {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción original */
+    max-height: 300px; /* Ajusta a una altura más pequeña */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+}
 .card {
     border: 0px;
 }
@@ -33,4 +43,8 @@ body {
 .contacto {
     border: 1px solid grey;
 }
+
+/* .modal-body {
+    background: #b8dbff;
+} */
 
