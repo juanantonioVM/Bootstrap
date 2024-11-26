@@ -1,7 +1,11 @@
+body {
+    position: relative;
+}
+
 .anclas:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease-in-out;
-    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
     transition: border-top 0.3s ease-in-out;
 }
 
@@ -15,5 +19,18 @@
 .container, .row, .col {
     padding: 0;
     margin: 0;
+}
+.card img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card {
+    border: 0px;
+}
+
+.contacto {
+    border: 1px solid grey;
 }
 
