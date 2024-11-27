@@ -42,9 +42,10 @@ body {
 
 .contacto {
     border: 1px solid grey;
+    border-radius: 10px;
 }
 
-/* .modal-body {
-    background: #b8dbff;
-} */
+.logo {
+    text-decoration: none;
+}
 
