@@ -15,11 +15,6 @@ body {
     margin: 0 auto; /* Centra la imagen */
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(10%) sepia(50%) saturate(300%) hue-rotate(200deg) brightness(50%) contrast(120%);
-}
-
 /* Otros ajustes generales */
 .container, .row, .col {
     padding: 0;
@@ -33,7 +28,7 @@ body {
 .carousel-inner img {
     width: 100%; /* Ocupa todo el ancho del contenedor */
     height: auto; /* Mantiene la proporción original */
-    max-height: 300px; /* Ajusta a una altura más pequeña */
+    max-height: 555px; /* Ajusta a una altura más pequeña */
     object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
 }
 .card {
@@ -48,4 +43,34 @@ body {
 .logo {
     text-decoration: none;
 }
+
+.contraste {
+    color: black;
+}
+
+.barra {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.bodycolor {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+.footercolor {
+    background-color: #2c3e50;
+}
+
+/* .colorespaleta {
+    color: #2c3e50 (Gris Pizarra Oscuro Primario);
+
+    color: #1abc9c (Verde Azulado Oscuro Secundario);
+
+    color: #34495e (Azul Noche Acento);
+
+    color: #ecf0f1 (Blanco Niebla Fondo);
+
+    color: #2c3e50 (Gris Pizarra Oscuro Texto);
+} */
 

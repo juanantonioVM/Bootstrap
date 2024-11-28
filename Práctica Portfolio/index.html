@@ -8,14 +8,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./estayl.css">
     <title>Home - Juan Antonio Dólera</title>
+    <link rel="icon" type="image/x-icon" href="./images/logoNegro.webp">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" class="bodycolor">
 
     <header>
         <!-- NavBar -->
         <div class="row justify-content-between">
-            <nav class="navbar fixed-top navbar-expand-sm bg-success navbar-dark">
+            <nav class="navbar fixed-top navbar-expand-sm barra navbar-dark">
                 <!-- Logotipo -->
                 <a class="navbar-brand ps-4" href="#">
                     <img src="./images/logoBlanco.webp" alt="Logo" width="50">
@@ -48,7 +49,7 @@
     </header>
 
     <section>
-        <div class="row bg-secondary mt-5">
+        <div class="row mt-5">
             <main>
                 <h3 class="display-6 text-center mt-5" id="portafolio">Portafolio</h3>
                 <!-- Galería -->
@@ -56,33 +57,33 @@
                     <!-- Cards con imágenes y modales -->
                     <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
                         <div class="card mb-4">
-                            <img src="./images/basketcover.jpg" alt="Desarrollador web" class="img-fluid w-100 rounded" data-bs-toggle="modal" data-bs-target="#1Modal" />
+                            <img src="./images/basketcover.jpg" alt="Baloncesto" class="img-fluid w-100 rounded" data-bs-toggle="modal" data-bs-target="#modal1"/>
                         </div>
                         <div class="card mb-4">
-                            <img src="./images/futsalcover2.jpg" alt="Boat on Calm Water" class="img-fluid w-100 shadow-1-strong rounded" data-bs-toggle="modal" data-bs-target="#modal2" />
+                            <img src="./images/futsalcover.jpg" alt="Fútbol sala" class="img-fluid w-100 rounded" data-bs-toggle="modal" data-bs-target="#modal2"/>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <div class="card mb-4">
-                            <img src="./images/coding.jpg" alt="Desarrollador web" class="img-fluid w-100 rounded" data-bs-toggle="modal" data-bs-target="#3Modal" />
+                            <img src="./images/coding.jpg" alt="Desarrollador web" class="img-fluid w-100 rounded" data-bs-toggle="modal" data-bs-target="#modal3" />
                         </div>
                         <div class="card mb-4">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="Boat on Calm Water" class="img-fluid w-100 shadow-1-strong rounded" data-bs-toggle="modal" data-bs-target="#4Modal" />
+                            <img src="./images/teachercover.jpg" alt="Profesor de Educación Física" class="img-fluid w-100 rounded" data-bs-toggle="modal" data-bs-target="#modal4" />
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
                         <div class="card mb-4">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp" alt="Boat on Calm Water" class="img-fluid w-100 shadow-1-strong rounded" data-bs-toggle="modal" data-bs-target="#5Modal" />
+                            <img src="./images/catcover.jpg" alt="Gatos" class="img-fluid w-100 rounded" data-bs-toggle="modal" data-bs-target="#modal5" />
                         </div>
                         <div class="card mb-4">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp" alt="Boat on Calm Water" class="img-fluid w-100 shadow-1-strong rounded" data-bs-toggle="modal" data-bs-target="#6Modal" />
+                            <img src="./images/zapcover.jpg" alt="Zapatillas" class="img-fluid w-100 rounded" data-bs-toggle="modal" data-bs-target="#modal6" />
                         </div>
                     </div>
                 </div>
 
                 <!-- Modales con carruseles -->
                 <!-- Galería 1 -->
-                <div class="modal fade" id="1Modal">
+                <div class="modal fade" id="modal1">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -90,40 +91,51 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                             <div class="modal-body">
-                                <div id="1carousel" class="carousel slide" data-bs-ride="carousel">
+                                <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
                                     <!-- Imágenes -->
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="d-block w-100" alt="Imagen 1">
+                                            <img src="./images/basket1.jpg" class="d-block w-100" alt="Imagen 1">
                                             <div class="carousel-caption">
-
+                                                <h3>Baloncesto</h3>
+                                                <p>He jugado a este deporte durante algunos años de mi vida </p>
                                             </div>
                                         </div>
-                                        <div class="carousel-item active">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="d-block w-100" alt="Imagen 1">
+                                        <div class="carousel-item">
+                                            <img src="./images/basket2.jpg" class="d-block w-100" alt="Imagen 2">
                                             <div class="carousel-caption">
-
+                                                <h3>Baloncesto</h3>
+                                                <p>Con una dedicación y un esfuerzo constante</p>
                                             </div>
                                         </div>
-                                        <div class="carousel-item active">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="d-block w-100" alt="Imagen 1">
+                                        <div class="carousel-item">
+                                            <img src="./images/basket3.jpg" class="d-block w-100" alt="Imagen 3">
                                             <div class="carousel-caption">
-
+                                                <h3>Baloncesto</h3>
+                                                <p>Aportando siempre espíritu deportivo y de equipo</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/basket4.jpg" class="d-block w-100" alt="Imagen 4">
+                                            <div class="carousel-caption">
+                                                <h3>Baloncesto</h3>
+                                                <p>Superando límites personales</p>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Controladores -->
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#1carousel" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#1carousel" data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     </button>
                                     <!-- Indicadores -->
                                     <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#1carousel" data-bs-slide-to="0" class="active"></button>
-                                        <button type="button" data-bs-target="#1carousel" data-bs-slide-to="1"></button>
-                                        <button type="button" data-bs-target="#1carousel" data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3"></button>
                                     </div>
                                 </div>
                             </div>
@@ -147,19 +159,31 @@
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <img src="./images/futsal1.jpg" class="d-block w-100" alt="Imagen 1">
-                                            <div class="carousel-caption"></div>
+                                            <div class="carousel-caption">
+                                                <h3 class="contraste">Fútbol sala</h3>
+                                                <p class="contraste">Trabajo como entrenador de categorías inferiores</p>
+                                            </div>
                                         </div>
                                         <div class="carousel-item">
                                             <img src="./images/futsal2.jpg" class="d-block w-100" alt="Imagen 2">
-                                            <div class="carousel-caption"></div>
+                                            <div class="carousel-caption">
+                                                <h3>Fútbol sala</h3>
+                                                <p>Enseñando valores a través del deporte</p>
+                                            </div>
                                         </div>
                                         <div class="carousel-item">
                                             <img src="./images/futsal3.jpg" class="d-block w-100" alt="Imagen 3">
-                                            <div class="carousel-caption"></div>
+                                            <div class="carousel-caption">
+                                                <h3>Fútbol sala</h3>
+                                                <p>Aprendiendo habilidades nuevas</p>
+                                            </div>
                                         </div>
                                         <div class="carousel-item">
                                             <img src="./images/futsal4.jpg" class="d-block w-100" alt="Imagen 4">
-                                            <div class="carousel-caption"></div>
+                                            <div class="carousel-caption">
+                                                <h3>Fútbol sala</h3>
+                                                <p>Formando futuras estrellas</p>
+                                            </div>
                                         </div>
                                     </div>
                                     <!-- Controladores -->
@@ -184,10 +208,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
                 <!-- Galería 3 -->
-                <div class="modal fade" id="3Modal">
+                <div class="modal fade" id="modal3">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -195,41 +217,37 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                             <div class="modal-body">
-                                <div id="3carousel" class="carousel slide" data-bs-ride="carousel">
+                                <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
                                     <!-- Imágenes -->
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp" class="d-block w-100" alt="Imagen 1">
+                                            <img src="./images/proyect1.png" class="d-block w-100" alt="Imagen 1">
                                             <div class="carousel-caption">
-
+                                                <h3 class="contraste">Desarrollo Web</h3>
+                                                <p class="contraste">Calculadora usando JavaScript · <small>Proyecto formativo</small></p>
                                             </div>
                                             <a href="#" class="btn btn-primary mt-3">Saber más</a>
                                         </div>
-                                        <div class="carousel-item active">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp" class="d-block w-100" alt="Imagen 1">
+                                        <div class="carousel-item">
+                                            <img src="./images/proyect2.png" class="d-block w-100" alt="Imagen 2">
                                             <div class="carousel-caption">
-
+                                                <h3 class="contraste">Desarrollo Web</h3>
+                                                <p class="contraste">Página de gestión de un restaurante usando PHP · <small>Proyecto formativo</small></p>
                                             </div>
-                                        </div>
-                                        <div class="carousel-item active">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp" class="d-block w-100" alt="Imagen 1">
-                                            <div class="carousel-caption">
-
-                                            </div>
+                                            <a href="#" class="btn btn-primary mt-3">Saber más</a>
                                         </div>
                                     </div>
                                     <!-- Controladores -->
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#3carousel" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#3carousel" data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     </button>
                                     <!-- Indicadores -->
                                     <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#3carousel" data-bs-slide-to="0" class="active"></button>
-                                        <button type="button" data-bs-target="#3carousel" data-bs-slide-to="1"></button>
-                                        <button type="button" data-bs-target="#3carousel" data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1"></button>
                                     </div>
                                 </div>
                             </div>
@@ -240,7 +258,7 @@
                     </div>
                 </div>
                 <!-- Galería 4 -->
-                <div class="modal fade" id="4Modal">
+                <div class="modal fade" id="modal4">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -248,40 +266,43 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                             <div class="modal-body">
-                                <div id="4carousel" class="carousel slide" data-bs-ride="carousel">
+                                <div id="carousel4" class="carousel slide" data-bs-ride="carousel">
                                     <!-- Imágenes -->
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="d-block w-100" alt="Imagen 1">
+                                            <img src="./images/ed1.jpg" class="d-block w-100" alt="Imagen 1">
                                             <div class="carousel-caption">
-
+                                                <h3 class="contraste">Profesor de eduación física</h3>
+                                                <p class="contraste">Graduado en mención de educación física</p>
                                             </div>
                                         </div>
-                                        <div class="carousel-item active">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="d-block w-100" alt="Imagen 1">
+                                        <div class="carousel-item">
+                                            <img src="./images/ed2.jpg" class="d-block w-100" alt="Imagen 2">
                                             <div class="carousel-caption">
-
+                                                <h3 class="">Profesor de eduación física</h3>
+                                                <p class="">Graduado en mención de educación física</p>
                                             </div>
                                         </div>
-                                        <div class="carousel-item active">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="d-block w-100" alt="Imagen 1">
+                                        <div class="carousel-item">
+                                            <img src="./images/ed3.jpg" class="d-block w-100" alt="Imagen 3">
                                             <div class="carousel-caption">
-
+                                                <h3 class="">Profesor de eduación física</h3>
+                                                <p class="">Graduado en mención de educación física</p>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Controladores -->
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#4carousel" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#4carousel" data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     </button>
                                     <!-- Indicadores -->
                                     <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#4carousel" data-bs-slide-to="0" class="active"></button>
-                                        <button type="button" data-bs-target="#4carousel" data-bs-slide-to="1"></button>
-                                        <button type="button" data-bs-target="#4carousel" data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#carousel4" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#carousel4" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#carousel4" data-bs-slide-to="2"></button>
                                     </div>
                                 </div>
                             </div>
@@ -292,7 +313,7 @@
                     </div>
                 </div>
                 <!-- Galería 5 -->
-                <div class="modal fade" id="5Modal">
+                <div class="modal fade" id="modal5">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -300,40 +321,51 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                             <div class="modal-body">
-                                <div id="5carousel" class="carousel slide" data-bs-ride="carousel">
+                                <div id="carousel5" class="carousel slide" data-bs-ride="carousel">
                                     <!-- Imágenes -->
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp" class="d-block w-100" alt="Imagen 1">
+                                            <img src="./images/cat1.jpg" class="d-block w-100" alt="Imagen 1">
                                             <div class="carousel-caption">
-
+                                                <h3 class="contraste">Otras aficiones</h3>
+                                                <p class="contraste">Domador de bestias grises</p>
                                             </div>
                                         </div>
-                                        <div class="carousel-item active">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp" class="d-block w-100" alt="Imagen 1">
+                                        <div class="carousel-item">
+                                            <img src="./images/cat2.jpg" class="d-block w-100" alt="Imagen 2">
                                             <div class="carousel-caption">
-
+                                                <h3 class="">Otras aficiones</h3>
+                                                <p class="">Domador de bestias siamesas</p>
                                             </div>
                                         </div>
-                                        <div class="carousel-item active">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp" class="d-block w-100" alt="Imagen 1">
+                                        <div class="carousel-item">
+                                            <img src="./images/cat3.jpg" class="d-block w-100" alt="Imagen 3">
                                             <div class="carousel-caption">
-
+                                                <h3 class="">Otras aficiones</h3>
+                                                <p class="">Domador de bestias negras</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/cat4.jpg" class="d-block w-100" alt="Imagen 4">
+                                            <div class="carousel-caption">
+                                                <h3 class="contraste">Otras aficiones</h3>
+                                                <p class="contraste">Domador de bestias naranjas</p>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Controladores -->
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#5carousel" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#5carousel" data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     </button>
                                     <!-- Indicadores -->
                                     <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#5carousel" data-bs-slide-to="0" class="active"></button>
-                                        <button type="button" data-bs-target="#5carousel" data-bs-slide-to="1"></button>
-                                        <button type="button" data-bs-target="#5carousel" data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#carousel5" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#carousel5" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#carousel5" data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#carousel5" data-bs-slide-to="3"></button>
                                     </div>
                                 </div>
                             </div>
@@ -344,7 +376,7 @@
                     </div>
                 </div>
                 <!-- Galería 6 -->
-                <div class="modal fade" id="6Modal">
+                <div class="modal fade" id="modal6">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -352,40 +384,68 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                             <div class="modal-body">
-                                <div id="6carousel" class="carousel slide" data-bs-ride="carousel">
+                                <div id="carousel6" class="carousel slide" data-bs-ride="carousel">
                                     <!-- Imágenes -->
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp" class="d-block w-100" alt="Imagen 1">
+                                            <img src="./images/zap1.jpg" class="d-block w-100" alt="Imagen 1">
                                             <div class="carousel-caption">
-
+                                                <h3 class="contraste">Otras aficiones</h3>
+                                                <p class="contraste">Venta de zapatillas</p>
                                             </div>
+                                            <a href="https://www.vinted.es/member/29207231" class="btn btn-dark mt-3" target="_blank">
+                                                <img src="./images/vintedlogo.jpg" alt="Logo Vinted" class="rounded-circle" style="width: 20px; height: 20px; margin-right: 5px; ">
+                                                ¡Las quiero!
+                                            </a>
                                         </div>
-                                        <div class="carousel-item active">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp" class="d-block w-100" alt="Imagen 1">
+                                        
+                                        <div class="carousel-item">
+                                            <img src="./images/zap2.jpeg" class="d-block w-100" alt="Imagen 2">
                                             <div class="carousel-caption">
-
+                                                <h3 class="contraste">Otras aficiones</h3>
+                                                <p class="contraste">Venta de zapatillas</p>
                                             </div>
+                                            <a href="https://www.vinted.es/member/29207231" class="btn btn-dark mt-3" target="_blank">
+                                                <img src="./images/vintedlogo.jpg" alt="Logo Vinted" class="rounded-circle" style="width: 20px; height: 20px; margin-right: 5px; ">
+                                                ¡Las quiero!
+                                            </a>
                                         </div>
-                                        <div class="carousel-item active">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp" class="d-block w-100" alt="Imagen 1">
+                                        <div class="carousel-item">
+                                            <img src="./images/zap3.jpg" class="d-block w-100" alt="Imagen 3">
                                             <div class="carousel-caption">
-
+                                                <h3 class="contraste">Otras aficiones</h3>
+                                                <p class="contraste">Colección de zapatillas</p>
                                             </div>
+                                            <a href="https://www.vinted.es/member/29207231" class="btn btn-dark mt-3" target="_blank">
+                                                <img src="./images/vintedlogo.jpg" alt="Logo Vinted" class="rounded-circle" style="width: 20px; height: 20px; margin-right: 5px; ">
+                                                ¡Las quiero!
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/zap4.jpg" class="d-block w-100" alt="Imagen 4">
+                                            <div class="carousel-caption">
+                                                <h3 class="contraste">Otras aficiones</h3>
+                                                <p class="contraste">Colección de zapatillas</p>
+                                            </div>
+                                            <a href="https://www.vinted.es/member/29207231" class="btn btn-dark mt-3" target="_blank">
+                                                <img src="./images/vintedlogo.jpg" alt="Logo Vinted" class="rounded-circle" style="width: 20px; height: 20px; margin-right: 5px; ">
+                                                ¡Las quiero!
+                                            </a>
                                         </div>
                                     </div>
                                     <!-- Controladores -->
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#6carousel" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel6" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#6carousel" data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel6" data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     </button>
                                     <!-- Indicadores -->
                                     <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#6carousel" data-bs-slide-to="0" class="active"></button>
-                                        <button type="button" data-bs-target="#6carousel" data-bs-slide-to="1"></button>
-                                        <button type="button" data-bs-target="#6carousel" data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#carousel6" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#carousel6" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#carousel6" data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#carousel6" data-bs-slide-to="3"></button>
                                     </div>
                                 </div>
                             </div>
@@ -400,31 +460,49 @@
         <!-- Acerca de -->
         <div class="row">
             <h3 class="display-6 text-center" id="acercade">Acerca de</h3>
-            <div class="col-4 bg-info justify-content-center align-items-center d-flex flex-column">
-                <img src="./images/yo1.JPG" alt="Juan Antonio Dólera" width="200" class="bg-dark rounded-circle mt-2">
+            <div class="col-12 col-sm-4 justify-content-center align-items-center d-flex flex-column">
+                <img src="./images/yo1.JPG" alt="Juan Antonio Dólera" width="200" class="rounded-circle mt-2">
                 <p class="h5">Juan Antonio Dólera</p>
             </div>
-            <div class="col bg-warning">
-                <p class="m-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, quasi minima exercitationem placeat impedit modi quisquam nostrum. Enim quidem id libero minima architecto, laboriosam provident quibusdam repellendus, exercitationem incidunt veniam.</p>
-                <p class="m-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, quasi minima exercitationem placeat impedit modi quisquam nostrum. Enim quidem id libero minima architecto, laboriosam provident quibusdam repellendus, exercitationem incidunt veniam.</p>
+            <div class="col">
+                <p class="m-4">Estoy estudiando Desarrollo de Aplicaciones Web, donde combino creatividad y lógica para crear soluciones innovadoras.</p>
+                <p class="m-4">Facilidad de trabajo en grupo, conocimientos en inglés y capacidad de adaptarme a nuevos entornos.</p>
                 <div class="d-flex align-items-center ms-4 mb-2">
-                    <h6 class="me-3">HTML</h6>
-                    <div class="progress" style="width: 70%;">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 20%;"></div>
+                    <h6 class="me-5">HTML</h6>
+                    <div class="progress bg-dark" style="width: 70%;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%;"></div>
                     </div>
                 </div>
                 <div class="d-flex align-items-center ms-4  mb-2">
-                    <h6 class="me-3">HTML</h6>
-                    <div class="progress" style="width: 70%;">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 20%;"></div>
+                    <h6 class="me-5">CSS&nbsp;&nbsp;&nbsp;&nbsp;</h6>
+                    <div class="progress bg-dark" style="width: 70%;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%;"></div>
                     </div>
                 </div>
                 <div class="d-flex align-items-center ms-4  mb-2">
-                    <h6 class="me-3">HTML</h6>
-                    <div class="progress" style="width: 70%;">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 20%;"></div>
+                    <h6 class="me-3">Bootstrap&nbsp;</h6>
+                    <div class="progress bg-dark" style="width: 70%;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%;"></div>
                     </div>
-                </div>               
+                </div>
+                <div class="d-flex align-items-center ms-4  mb-2">
+                    <h6 class="me-5">PHP&nbsp;&nbsp;&nbsp;</h6>
+                    <div class="progress bg-dark" style="width: 70%;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center ms-4  mb-2">
+                    <h6 class="me-3">JavaScript&nbsp;</h6>
+                    <div class="progress bg-dark" style="width: 70%;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%;"></div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center ms-4  mb-2">
+                    <h6 class="me-5">Java&nbsp;&nbsp;&nbsp;</h6>
+                    <div class="progress bg-dark" style="width: 70%;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%;"></div>
+                    </div>
+                </div>            
             </div>
         </div>
         <!-- Contacto -->
@@ -432,7 +510,7 @@
             <div class="container mt-2 mb-5 justify-content-center align-items-center">
                 <h3 class="display-6 text-center" id="contacto">Contacto</h3>
                 <div class="row justify-content-center">
-                    <div class="col-md-8 contacto p-4">
+                    <div class="col-md-8 contacto col-11 p-4">
                         <form action="#" method="post">
                             <div class="mb-3 mt-2">
                                 <div class="row">
@@ -452,7 +530,7 @@
                             </div>
                             
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                <button type="submit" class="btn" style="background: #34495e; color: #ecf0f1;">Enviar</button>
                             </div>
                         </form>
                     </div>
@@ -461,7 +539,7 @@
         </div>  
     </section>
     <!-- Footer -->
-    <footer class="bg-dark text-white p-4 justify-content-center align-items-center d-flex">
+    <footer class="footercolor text-white p-4 justify-content-center align-items-center d-flex">
         <div class="container text-center">
             <div class="row">
                 <div class="col">
@@ -469,13 +547,13 @@
                         <img src="./images/github.webp" alt="Github" width="50" height="50">
                     </a>
                     <a href="#" target="_blank" class="logo me-3">
-                        <img src="./images/github.webp" alt="Twitter" width="50" height="50">
+                        <img src="./images/x.webp" alt="Twitter" width="50" height="50">
                     </a>
                     <a href="#" target="_blank" class="logo me-3">
-                        <img src="./images/github.webp" alt="Instagram" width="50" height="50">
+                        <img src="./images/insta.webp" alt="Instagram" width="50" height="50">
                     </a>
                     <a href="#" target="_blank" class="logo me-3">
-                        <img src="./images/github.webp" alt="LinkedIn" width="50" height="50">
+                        <img src="./images/link.png" alt="LinkedIn" width="50" height="50">
                     </a>
                 </div>
             </div>
