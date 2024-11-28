@@ -16,17 +16,13 @@
     margin: 0;
 }
 
-.card img {
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-}
 .carousel-inner img {
     width: 100%; /* Ocupa todo el ancho del contenedor */
     height: auto; /* Mantiene la proporción original */
     max-height: 555px; /* Ajusta a una altura más pequeña */
     object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
 }
+
 .card {
     border: 0px;
 }
