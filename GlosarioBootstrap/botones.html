@@ -90,6 +90,111 @@
                     <td>Para configurar el botón para que no podamos hacer click.</td>
                     <td><img src="./images/botones/disabled.png" width="300"></td>
                 </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;div class="row"&gt;
+    &lt;div class="col"&gt;
+        &lt;div class="btn-group"&gt;
+            &lt;button type="button" class="btn btn-secondary"&gt;1&lt;/button&gt;
+            &lt;button type="button" class="btn btn-secondary"&gt;2&lt;/button&gt;
+            &lt;button type="button" class="btn btn-secondary"&gt;3&lt;/button&gt;
+            &lt;button type="button" class="btn btn-secondary"&gt;4&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>                            
+                    </td>
+                    <td>Grupo de botones en una línea.</td>
+                    <td><img src="./images/botones/grupo.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;div class="row"&gt;
+    &lt;div class="col"&gt;
+        &lt;div class="btn-toolbar"&gt;
+            &lt;div class="btn-group me-3"&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;1&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;2&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;3&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;4&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="btn-group me-3"&gt;
+                &lt;button type="button" class="btn btn-outline-primary"&gt;5&lt;/button&gt;
+                &lt;button type="button" class="btn btn-outline-primary"&gt;6&lt;/button&gt;
+                &lt;button type="button" class="btn btn-outline-primary"&gt;7&lt;/button&gt;
+                &lt;button type="button" class="btn btn-outline-primary"&gt;8&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="btn-group"&gt;
+                &lt;button type="button" class="btn btn-info"&gt;9&lt;/button&gt;
+                &lt;button type="button" class="btn btn-info"&gt;10&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>                            
+                    </td>
+                    <td>La barra de botones nos permite combinar grupos de botones para crear componentes más avanzados. También podemos añadir en cada grupo de botones las clases btn-group-(sm/lg), para modificar su tamaño.</td>
+                    <td><img src="./images/botones/toolbar.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;div class="btn-group-vertical"&gt;&lt;/div&gt;
+                        </pre>                            
+                    </td>
+                    <td>Grupo de botones en vertical.</td>
+                    <td><img src="./images/botones/vertical.png" width="100"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;div class="row"&gt;
+    &lt;div class="col"&gt;
+        &lt;div class="btn-group"&gt;
+            &lt;button type="button" class="btn btn-info"&gt;1&lt;/button&gt;
+            &lt;button type="button" class="btn btn-info"&gt;2&lt;/button&gt;
+            &lt;div class="btn-group"&gt;
+                &lt;button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"&gt;
+                Dropdown
+                &lt;/button&gt;
+                &lt;ul class="dropdown-menu"&gt;
+                    &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;            
+                        </pre>                            
+                    </td>
+                    <td>También es posible añadir desplegables a los grupos de botones.</td>
+                    <td><img src="./images/botones/grupodropdown.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;div class="row"&gt;
+    &lt;div class="col"&gt;
+        &lt;h5&gt;Deseo recibir información acerca de:&lt;/h5&gt;
+        &lt;div class="btn-group"&gt;
+            &lt;input type="checkbox" class="btn-check" id="cine" checked&gt;
+            &lt;label class="btn btn-outline-primary" for="cine"&gt;Cine&lt;/label&gt;
+                        
+            &lt;input type="checkbox" class="btn-check" id="music"&gt;
+            &lt;label class="btn btn-outline-primary" for="music"&gt;Música&lt;/label&gt;
+                        
+            &lt;input type="checkbox" class="btn-check" id="sports"&gt;
+            &lt;label class="btn btn-outline-primary" for="sports"&gt;Deportes&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;           
+                        </pre>                            
+                    </td>
+                    <td>Podemos añadir comportamiento tipo checkbox a un grupo de botones, para que al pulsarlos se queden marcados. También podemos cambiar esto por un comportamiento de radiobutton, camiando el <code>type="checkbox"</code> por <code>type="radio"</code>.</td>
+                    <td><img src="./images/botones/checkbox.png" width="300"></td>
+                </tr>
             </tbody>
         </table>
         <div class="text-center mt-4 mb-4">
