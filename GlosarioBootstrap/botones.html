@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <title>Tablas en Bootstrap</title>
+    <title>Botones en Bootstrap</title>
     <style>
         body {
             background-image: url('./wave.png');
@@ -45,7 +45,7 @@
 </head>
 <body>
     <div class="container">
-        <p class="h1 text-center">Tablas</p>
+        <p class="h1 text-center">Botones</p>
         <table border="1" cellpadding="10" cellspacing="0" class="table table-bordered text-center">
             <thead class="table-dark">
                 <tr>
@@ -57,45 +57,38 @@
             <tbody>
                 <tr>
                     <td>
-                        <pre>class="table"</pre>
+                        <pre>class="btn btn-primary"</pre>
                     </td>
-                    <td>Añadiendo la clase y diferenciando el thead se queda así</td>
-                    <td><img src="./images/tablas/thead.png" width="300"></td>
+                    <td>Colores para diferentes tipos de botones.</td>
+                    <td><img src="./images/botones/colores.png" width="300"></td>
                 </tr>
                 <tr>
                     <td>
-                        <pre>class="table-dark"</pre>
+                        <pre>class="btn btn-outline-primary"</pre>
                     </td>
-                    <td>Cambia el color de la tabla, también se puede añadir el success, primary, danger, etc.</td>
-                    <td><img src="./images/tablas/dark.png" width="300"></td>
+                    <td>Colores para diferentes tipos de botones, al pasar el ratón cambia de color.</td>
+                    <td><img src="./images/botones/outline.png" width="300"></td>
                 </tr>
                 <tr>
                     <td>
-                        <pre>class="table-bordered"</pre>
+                        <pre>class="btn btn-(sm/lg)"</pre>
                     </td>
-                    <td>Añade bordes a cada celda.</td>
-                    <td><img src="./images/tablas/bordered.png" width="300"></td>
+                    <td>Tamaños de los botones.</td>
+                    <td><img src="./images/botones/tamanho.png" width="300"></td>
                 </tr>
                 <tr>
                     <td>
-                        <pre>class="table-striped"</pre>
+                        <pre>class="d-grid"</pre>
                     </td>
-                    <td>Alternamos colores entre cada fila.</td>
-                    <td><img src="./images/tablas/tripered.png" width="300"></td>
+                    <td>Para que el botón ocupe todo el ancho del contenedor.</td>
+                    <td><img src="./images/botones/grid.png" width="300"></td>
                 </tr>
                 <tr>
                     <td>
-                        <pre>class="table-sm table-hover"</pre>
+                        <pre>class="disabled"</pre>
                     </td>
-                    <td>Con <code>sm</code> hacemos la tabla más compacta, con <code>hover</code> cambia la aparenciad de las filas al pasar el ratón.</td>
-                    <td><img src="./images/tablas/hover.png" width="300"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <pre>class="table-responsive"</pre>
-                    </td>
-                    <td>Para añadir un scroll horizontal, esta clase se pone en un <code>div</code> y dentro de este, la tabla</td>
-                    <td><img src="./images/tablas/responsive.png" width="300"></td>
+                    <td>Para configurar el botón para que no podamos hacer click.</td>
+                    <td><img src="./images/botones/disabled.png" width="300"></td>
                 </tr>
             </tbody>
         </table>
