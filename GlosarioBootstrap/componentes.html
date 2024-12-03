@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <title>Componentes en Bootstrap</title>
+    <style>
+        body {
+            background-image: url('./wave.png');
+            color: #1b5f86;
+        }
+        .table {
+            background-color: rgba(255, 242, 209, 0.7);
+            border-radius: 10px;
+        }
+        p.h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+        }
+        pre {
+            background-color: #cae1e5;
+            color: #1b5f86;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Consolas, monospace;
+        }
+        a {
+            background-color: #1b5f86;;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        a:hover {
+            color: #fff2d1;
+            text-shadow: 0 0 5px #1b5f86;
+        }
+        td, th {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="h1 text-center">Componentes</p>
+        <table border="1" cellpadding="10" cellspacing="0" class="table table-bordered text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Clases</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;div class="alert alert-success" role="alert"&gt;
+    ¡Operación completada con éxito!
+&lt;/div&gt;
+&lt;div class="alert alert-danger" (role="alert")&gt;
+    Ocurrió un error inesperado.
+    &lt;a href="#" class="alert-link"&gt;Pinche aquí para más detalles
+&lt;/div&gt;
+&lt;div class="alert alert-warning alert-dismissible fade show" role="alert"&gt;
+    &lt;strong&gt;Atención:&lt;/strong&gt; Revisa los campos obligatorios.
+    &lt;button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"&gt;&lt;/button&gt;
+&lt;/div&gt;
+                        </pre>
+                    </td>
+                    <td>Alertas con diferentes contextos y botón de cierre</td>
+                    <td><img src="./images/componentes/alertas.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;h1&gt;Notificaciones &lt;span class="badge bg-primary"&gt;4&lt;/span&gt;&lt;/h1&gt;
+&lt;h1&gt;Notificaciones &lt;span class="badge rounded-pill bg-primary"&gt;4&lt;/span&gt;&lt;/h1&gt;
+&lt;button class="btn btn-secondary"&gt;
+    Mensajes &lt;span class="badge bg-danger"&gt;99+&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class="btn btn-secondary position-relative"&gt;
+    Mensajes
+    &lt;span class="badge bg-danger rounded-pill position-absolute top-0 start-100 translate-middle"&gt;
+    99+
+    &lt;/span&gt;
+&lt;/button&gt;
+&lt;button class="btn btn-secondary position-relative"&gt;
+    Alertas
+    &lt;span class="rounded-circle p-2 border border-light bg-danger position-absolute 
+    top-0 start-100 translate-middle"&gt;
+    &lt;/span&gt;
+&lt;/button&gt;
+                        </pre>
+                    </td>
+                    <td>Tenemos insignias clásicas, insignias con los bordes redondeados, insignias en botones, insignias en la parte superior derecha del texto e insignias con un indicador genérico</td>
+                    <td>
+                        <img src="./images/componentes/in1.png" width="300">
+                        <img src="./images/componentes/in2.png" width="300">
+                        <img src="./images/componentes/in3.png" width="300">
+                        <img src="./images/componentes/in4.png" width="300">
+                        <img src="./images/componentes/in5.png" width="300">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;div class="card" style="width: 18rem;"&gt;
+    &lt;img src="./images/componentes/card.jpg" class="card-img-(top/bottom)" alt="..."&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h5 class="card-title"&gt;Título de la tarjeta&lt;/h5&gt;
+        &lt;p class="card-text"&gt;Texto de ejemplo dentro de la tarjeta para describir contenido.&lt;/p&gt;
+        &lt;a href="#" class="btn btn-primary"&gt;Ir a algún lugar&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                    </td>
+                    <td>Tarjeta con imagen, texto y botón</td>
+                    <td><img src="./images/componentes/card.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;div class="card bg-primary text-white border-danger w-75" style="width: 18rem;"&gt;
+    &lt;div class="card-header"&gt;Header&lt;/div&gt;
+    &lt;div class="card-body"&gt;Contenido&lt;/div&gt;
+    &lt;div class="card-footer"&gt;Footer&lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                    </td>
+                    <td>Contamos con clases para cambiar el color de la tarjeta, añadir headers y footers, color de los bordes, y para cambiar el tamaño (<code>w-75</code>) para el 75% del ancho del contenedor</td>
+                    <td>
+                        <img src="./images/componentes/headerfootercard.png" width="300">
+                        <img src="./images/componentes/colores.png" width="300">
+                        <img src="./images/componentes/bordescard.png" width="300">
+                        <img src="./images/componentes/tamanho.png" width="300">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>&lt;a href="#" class="stretched-link"&gt;</pre>
+                    </td>
+                    <td>Podemos hacer que la card entera sea un "botón" con esta clase</td>
+                    <td><img src="./images/componentes/stretched.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;div class="card" style="width: 18rem;"&gt;
+    &lt;img src="./images/componentes/card.jpg" class="card-img-(top/bottom)" alt="..."&gt;
+    &lt;div class="card-img-overlay text-center"&gt;
+        &lt;h5 class="card-title"&gt;Título de la tarjeta&lt;/h5&gt;
+        &lt;p class="card-text"&gt;Texto de ejemplo dentro de la tarjeta para describir contenido.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;    
+                    </pre>
+                    </td>
+                    <td>Podemos convertir una imagen en un fondo de tarjeta con el texto superpuesto</td>
+                    <td><img src="./images/componentes/overlay.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;div class="row row-cols-1 row-cols-md-3 g-4"&gt;
+    &lt;div class="col"&gt;
+        &lt;div class="card h-100"&gt;
+            &lt;img src="" class="card-img-top" alt="..."/&gt;
+            &lt;div class="card-body"&gt;
+                &lt;h5 class="card-title"&gt;Título 1&lt;/h5&gt;
+                &lt;p class="card-text"&gt;Contenido de la primera tarjeta.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;div class="card-footer"&gt;
+        &lt;small class="text-muted"&gt;Pie de tarjeta&lt;/small&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col"&gt;
+    &lt;div class="card h-100"&gt;
+        &lt;img src="" class="card-img-top" alt="..."/&gt;
+        &lt;div class="card-body"&gt;
+            &lt;h5 class="card-title"&gt;Título 2&lt;/h5&gt;
+            &lt;p class="card-text"&gt;Contenido de la segunda tarjeta.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="card-footer"&gt;
+            &lt;small class="text-muted"&gt;Pie de tarjeta&lt;/small&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col"&gt;
+    &lt;div class="card h-100"&gt;
+        &lt;img src="" class="card-img-top" alt="..."/&gt;
+        &lt;div class="card-body"&gt;
+            &lt;h5 class="card-title"&gt;Título 3&lt;/h5&gt;
+            &lt;p class="card-text"&gt;Contenido de la tercera tarjeta.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="card-footer"&gt;
+            &lt;small class="text-muted"&gt;Pie de tarjeta&lt;/small&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                    </td>
+                    <td>Tarjetas con la misma altura usando <code>h-100</code></td>
+                    <td><img src="./images/componentes/cardsh100.png" width="300"></td>
+                </tr>
+                
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"&gt;
+    Mostrar/Ocultar
+&lt;/button&gt;
+&lt;div class="collapse (show)" id="collapseExample"&gt;
+    &lt;div class="card card-body"&gt;
+        Este es un contenido colapsable.
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                    </td>
+                    <td>Elemento Collapse. Este elemento se encuentra de manera oculta por defecto, con la clase <code>show</code> hacemos que por defecto aparezca mostrado</td>
+                    <td><img src="./images/componentes/collapse.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;div class="accordion" id="accordionExample"&gt;
+    &lt;div class="accordion-item"&gt;
+        &lt;h2 class="accordion-header" id="headingOne"&gt;
+            &lt;button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"&gt;
+                Elemento 1
+            &lt;/button&gt;
+        &lt;/h2&gt;
+        &lt;div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="accordionExample"&gt;
+            &lt;div class="accordion-body"&gt;
+                Contenido del primer acordeón.
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="accordion-item"&gt;
+        &lt;h2 class="accordion-header" id="headingDos"&gt;
+            &lt;button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDos"&gt;
+                Elemento 2
+            &lt;/button&gt;
+        &lt;/h2&gt;
+        &lt;div id="collapseDos" class="accordion-collapse collapse" data-bs-parent="accordionExample"&gt;
+            &lt;div class="accordion-body"&gt;
+                Contenido del segundo acordeón.
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                    </td>
+                    <td>Acordeón</td>
+                    <td><img src="./images/componentes/accordion.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;div id="carouselExample" class="carousel slide" data-bs-ride="carousel"&gt;
+    &lt;div class="carousel-inner"&gt;
+        &lt;div class="carousel-item active"&gt;
+            &lt;img src="./images/componentes/slide1.jpg" class="d-block w-100" alt="..."/&gt;
+            &lt;div class="carousel-caption"&gt;
+                &lt;h5&gt;Título&lt;/h5&gt;
+                &lt;p&gt;Contenido.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="carousel-item"&gt;
+            &lt;img src="./images/componentes/slide2.jpg" class="d-block w-100" alt="..."/&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"&gt;
+        &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"&gt;
+        &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+                        </pre>
+                    </td>
+                    <td>Carrusel de imágenes</td>
+                    <td><img src="./images/componentes/carousel.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"&gt;
+    Abrir Modal
+&lt;/button&gt;
+&lt;div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"&gt;
+    &lt;div class="modal-dialog"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;div class="modal-header"&gt;
+                &lt;h5 class="modal-title" id="exampleModalLabel"&gt;Título Modal&lt;/h5&gt;
+                &lt;button type="button" class="btn-close" data-bs-dismiss="modal"&gt;&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body"&gt;
+                Este es un contenido de ejemplo dentro del modal.
+            &lt;/div&gt;
+            &lt;div class="modal-footer"&gt;
+                &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gt;Cerrar&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                    </td>
+                    <td>Ventana Modal</td>
+                    <td><img src="./images/componentes/modal.png" width="300"></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <pre>
+&lt;div class="modal fade" id="exampleModal"&gt;
+    &lt;div class="modal-dialog modal-(sm/lg/xl)"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            <hr>
+&lt;div class="modal fade" id="exampleModal"&gt;
+    &lt;div class="modal-dialog modal-fullscreen"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            <hr>
+&lt;div class="modal fade" id="exampleModal"&gt;
+    &lt;div class="modal-dialog modal-dialog-centered"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            <hr>
+&lt;div class="modal fade" id="exampleModal"&gt;
+    &lt;div class="modal-dialog modal-dialog-scrollable"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                    </td>
+                    <td>Otras clases para los modales. Para cambiar el tamaño. Para que ocupe la pantalla completa. Para centrar el modal vertical y horizontalmente dentro de la página. Cuando nuestra ventana modal tiene mucho contenido, se agregará una barra de
+                        desplazamiento (scrollbar) a la página. Sin embargo, es posible desplazarse solo dentro del modal en lugar de la página.</td>
+                    <td><img src="./images/componentes/modal.png" width="300"></td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <div class="text-center mt-4 mb-4">
+            <a href="index.html">Volver atrás</a>
+        </div>
+    </div>
+</body>
+</html>
