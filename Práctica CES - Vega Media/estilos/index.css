@@ -1,0 +1,80 @@
+body {
+    overflow-x: hidden;
+}
+.barraa {
+    position: absolute; 
+    z-index: 10;
+    padding: 10px;
+}
+.etapa {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    border-radius: 0px;
+    border: 0px;
+}
+.etapa img {
+    transition: transform 0.5s ease;
+}
+.etapa:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.fondo-texto {
+    background-color: #00000070;
+    border-radius: 0px;
+}
+
+.saber {
+    border: 1px solid #9dbe15;
+}
+
+.saber:hover {
+    background-color: #9dbe15;
+}
+.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.logo {
+    transition: transform 0.3s ease;
+}
+.servicios-title {
+    color: #9dbe15;
+}
+.servicios-btn {
+    background-color: #9dbe15;
+    color: white;
+}
+.servicios-btn:hover {
+    background-color: #748d11;
+    color: white;
+}
+.text-color {
+    color: #9dbe15;
+}
+.text-color:hover {
+    color: #748d11;
+}
+#scrollToTop {
+    position: fixed; /* Fija el botón en un lugar específico */
+    bottom: 20px;    /* Distancia desde la parte inferior de la pantalla */
+    right: 20px;     /* Distancia desde la parte derecha de la pantalla */
+    z-index: 1000;   /* Asegura que esté por encima de otros elementos */
+    background-color: #9cbe15;
+    border-radius: 50%;
+}
+
+#scrollToTop img {
+    width: 50px;          /* Ajusta el tamaño de la imagen */
+    height: 50px;
+    border-radius: 50%;   /* Hace la imagen circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra atractiva */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Animación al pasar el ratón */
+}
+
+#scrollToTop img:hover {
+    transform: scale(1.1); /* Efecto de agrandar ligeramente */
+}
+

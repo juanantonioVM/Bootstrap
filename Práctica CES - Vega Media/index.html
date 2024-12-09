@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./estilos/estilo_index.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="icon" type="image/x-icon" href="./images/logos/grifo.webp">
     <title>CES VEGA MEDIA</title>
+    <link rel="stylesheet" href="./estilos/index.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <a href="#inicio" id="scrollToTop">
+        <img src="./images/index/flecha2.png" alt="Volver arriba" id="topButton">
+    </a>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark barraa">
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark barraa">
             <div class="container-fluid">
                 <!-- Logotipo -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#inicio" id="inicio">
                     <img src="./images/logos/logoVMfooter.png" alt="Logo" width="100">
                 </a>
         
@@ -28,28 +32,59 @@
                 <div class="collapse navbar-collapse" id="navbar_plegable">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#"><lead>Pestaña 1</lead></a>
+                            <a class="nav-link" href="#inicio"><lead>Inicio</lead></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#"><lead>Pestaña 2</lead></a>
+                            <a class="nav-link" href="#conoce"><lead>Conócenos</lead></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#etapas"><lead>Etapas educativas</lead></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#instalaciones"><lead>Instalaciones</lead></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios"><lead>Servicios</lead></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto"><lead>Contacto</lead></a>
                         </li>
                     </ul>
                 </div>       
             </div>
         </nav>
+        <!-- Carousel -->
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./images/index/vegamedia04.jpg" class="d-block w-100" alt="..."/>
-                    <div class="carousel-caption">
-                            
+                    <img src="./images/noticias/01/portada.jpg" class="d-block w-100" alt="Noticia1"/>
+                    <div class="carousel-caption d-flex flex-column align-items-start justify-content-start p-3 fondo-texto" style="border-radius: 10px;">
+                        <a href="./noticias/noticia01.html" class="h1 stretched-link">SER MAESTRO ES EMOCIONARTE</a>
+                        <p class="text-start">
+                            ¡QUEDA INAUGURADA LA EXPOSICIÓN DE ARTE DE ESTE CURSO! "SER MAESTRO ES EMOCIONANTE"
+                            <small>&emsp;<u>Haz click para ver más</u></small>
+                        </p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./images/index/vegamedia02.jpg" class="d-block w-100" alt="..."/>
+                    <img src="./images/noticias/02/portada.jpg" class="d-block w-100" alt="Noticia2"/>
+                    <div class="carousel-caption d-flex flex-column align-items-start justify-content-start p-3 fondo-texto" style="border-radius: 10px;">
+                        <a href="./noticias/noticia02.html" class="h1 stretched-link">HUERTO ESCOLAR</a>
+                        <p class="text-start">
+                            ¡Primeros brotes en el huerto de Infantil!
+                            <small>&emsp;<u>Haz click para ver más</u></small>
+                        </p>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./images/index/vegamedia03.jpg" class="d-block w-100" alt="..."/>
+                    <img src="./images/index/vegamedia01.jpg" class="d-block w-100" alt="Noticia2"/>
+                    <div class="carousel-caption d-flex flex-column align-items-start justify-content-start p-3 fondo-texto" style="border-radius: 10px;">
+                        <a href="https://www.instagram.com/cesvegamedia/" target="_blank" class="h1 stretched-link">VISITA NUESTRA CUENTA DE INSTAGRAM</a>
+                        <p class="text-start">
+                            Para conocer más noticias acerca de nuestro centro no dudes en visitar nuestra cuenta de instagram, donde hacemos publicaciones todos los días.
+                            <small>&emsp;<u>Haz click para ver más</u></small>
+                        </p>
+                    </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -65,5 +100,296 @@
             </div>
         </div>
     </header>
+    <section>
+        <!-- Conócenos -->
+        <div class="container-fluid">
+            <div class="row" id="conoce">
+                <h2 style="color: #9dbe15;" class="mt-4 ms-4 mb-4">CONÓCENOS</h2>
+                <div class="row align-items-center container">
+                    <div class="col-lg-6 col-12 mb-4 ms-5 me-5" style="text-align: justify;">
+                        <p>&emsp;El CES Vega Media es un centro concertado donde la enseñanza es totalmente gratuita, gestionado por una
+                        cooperativa de profesores con vocación por la formación, que forman una plantilla estable imprescindible para
+                        conseguir un verdadero trabajo de equipo.</p>
+                        <p>&emsp;Hemos crecido y seguimos creciendo por nuestro Proyecto Cooperativo, dónde las personas y una fuerte apuesta
+                        por un proyecto de calidad, son los elementos fundamentales de nuestra organización.</p>
+                        <p>&emsp;El C.E.S. Vega Media es un centro dinámico, con una actitud abierta al cambio, siempre buscando nuestro espacio
+                        dónde compartimos muchas cosas con otras Cooperativas pero dónde también tenemos nuestra propia identidad
+                        que nos hace diferentes.</p>
+                        <p>&emsp;Aquí se mezclan la experiencia, madurez y estabilidad que aportan los socios más antiguos, con la frescura y la
+                        ilusión que nos traen las últimas generaciones, pero todos con un denominador común: “Seguir trabajando por
+                        nuestro Centro, por una mayor calidad en nuestros servicios, siendo flexibles a los cambios constantes de la
+                        sociedad para adaptarnos a ellos en las mejores condiciones, y aprovechando la creatividad y la iniciativa que sólo
+                        las personas pueden aportar”.</p>
+                        <p>&emsp;Por todo ello, estamos y seguiremos estando al servicio de nuestra Comunidad Educativa.</p>
+                        <p>&emsp;El órgano responsable de la alta gestión de la cooperativa, es el Consejo Rector que está formado por siete
+                        personas, en las que recaen las funciones de organización y gestión del centro, a nivel empresarial y pedagógico.</p>
+                    </div>
+                    <div class="col-lg-5 col-12 text-center">
+                        <img src="./images/logos/logoagenda2030.png" alt="2030" class="img-fluid rounded w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Etapas -->
+        <div class="row" id="etapas">
+            <h2 style="color: #9dbe15;" class="mt-4 ms-4 mb-4">ETAPAS EDUCATIVAS</h2>
+            <div class="row g-0">
+                <div class="col-12 col-md-6">
+                    <div class="card etapa">
+                        <img src="./images/index/infantil.jpg" class="img-fluid w-100" alt="Infantil">
+                        <div class="card-img-overlay text-light align-self-end p-4 fondo-texto">
+                            <h3 class="card-title"><strong>Infantil</strong></h3>
+                            <p class="card-text d-none d-md-block">Esta etapa está dedicada al fomento y el desarrollo integral de personalidad individual de cada uno de
+                            nuestros alumnos mediante la promoción de las habilidades sociales, emocionales, cognitivas y motrices básicas.</p>
+                            <a href="./etapas/infantil.html" class="btn saber text-light">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card etapa">
+                        <img src="./images/index/primaria.jpg" class="img-fluid w-100" alt="Primaria">
+                        <div class="card-img-overlay text-light align-self-end p-4 fondo-texto">
+                            <h3 class="card-title"><strong>Primaria</strong></h3>
+                            <p class="card-text d-none d-md-block">Esta etapa está dedicada al desarrollo del interés por aprender y al fomento de la cultura general. Los
+                            alumnos alcanzarán su capacidad deductiva, inductiva y lógica a través de la propia experimentación.</p>
+                            <a href="./etapas/primaria.html" class="btn saber text-light">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card etapa">
+                        <img src="./images/index/secundaria.jpg" class="img-fluid w-100" alt="Secundaria">
+                        <div class="card-img-overlay text-light align-self-end p-4 fondo-texto">
+                            <h3 class="card-title"><strong>Secundaria</strong></h3>
+                            <p class="card-text d-none d-md-block">La finalidad de la
+                            educación secundaria obligatoria es proporcionar a todos los chicos y chicas una educación que les permita
+                            asegurar un desarrollo personal sólido.</p>
+                            <a href="./etapas/secundaria.html" class="btn saber text-light">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card etapa">
+                        <img src="./images/index/fpbs.jpg" class="img-fluid w-100" alt="FPBasica">
+                        <div class="card-img-overlay text-light align-self-end p-4 fondo-texto">
+                            <h3 class="card-title"><strong>FP Básica</strong></h3>
+                            <p class="card-text d-none d-md-block">Contamos con el ciclo de formación profesional de servicios administrativos.</p>
+                            <a href="./etapas/fpbasica.html" class="btn saber text-light">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card etapa">
+                        <img src="./images/index/gm.jpg" class="img-fluid w-100" alt="FPBasica">
+                        <div class="card-img-overlay text-light align-self-end p-4 fondo-texto">
+                            <h3 class="card-title"><strong>Grados medios</strong></h3>
+                            <p class="card-text d-none d-md-block">Contamos con la formación profesional de grado medio de instalaciones eléctricas y automáticas; cuidados auxiliares de enfermería; gestión administrativa.</p>
+                            <a href="./etapas/gradomedio.html" class="btn saber text-light">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card etapa">
+                        <img src="./images/index/gs.jpg" class="img-fluid w-100" alt="FPBasica">
+                        <div class="card-img-overlay text-light align-self-end p-4 fondo-texto">
+                            <h3 class="card-title"><strong>Grados superiores</strong></h3>
+                            <p class="card-text d-none d-md-block">Contamos con la formación profesional de grado superior de desarrollo de aplicaciones web; educación infantil.</p>
+                            <a href="./etapas/gradosuperior.html" class="btn saber text-light">Saber más</a>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <!-- Instalaciones -->
+        <div class="row" id="instalaciones">
+            <h2 style="color: #9dbe15;" class="mt-4 ms-4 mb-4">CONOCE NUESTRAS INSTALACIONES</h2>
+            <p class="ms-5">El centro cuenta con instalaciones modernas dotadas con las últimas tecnologías. Es un centro innovador, abierto al cambio, adaptándose a los últimos avances tecnológicos.</p>
+            <p class="ms-4">A continuación, puedes echar un vistazo a estas instalaciones.</p>
+            <div class="row g-0">
+                <div class="col-12 col-md-6">
+                    <div class="card etapa">
+                        <img src="./images/index/exterior.jpg" class="img-fluid w-100" alt="Infantil">
+                        <div class="card-img-overlay text-light align-self-end p-4 fondo-texto">
+                            <h3 class="card-title"><strong>Exteriores</strong></h3>
+                            <p class="card-text d-none d-md-block">Descubre nuestros amplios espacios al aire libre diseñados para el aprendizaje y la recreación. ¡Haz clic para ver imágenes de nuestros exteriores y sorprenderte con su encanto!</p>
+                            <a href="./instalaciones/exteriores.html" class="btn saber text-light">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card etapa">
+                        <img src="./images/index/interior.jpg" class="img-fluid w-100" alt="Primaria">
+                        <div class="card-img-overlay text-light align-self-end p-4 fondo-texto">
+                            <h3 class="card-title"><strong>Interiores</strong></h3>
+                            <p class="card-text d-none d-md-block">Conoce el interior de nuestras instalaciones, equipadas con los mejores recursos para un aprendizaje cómodo y moderno. ¡Entra y explora nuestras salas y áreas exclusivas!</p>
+                            <a href="./instalaciones/interiores.html" class="btn saber text-light">Ver</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Servicios -->
+        <div class="row" id="servicios">
+            <h2 style="color: #9dbe15;" class="mt-4 ms-4 mb-4">SERVICIOS DISPONIBLES EN EL CENTRO</h2>
+            <div class="container-fluid ps-5 pe-5">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./images/servicios/comedor.jpg" class="card-img-top" alt="Comedor"/>
+                            <div class="card-body">
+                                <h5 class="card-title servicios-title mt-2">Comedor</h5>
+                            </div>
+                            <div class="card-footer">
+                                <a href="./servicios/comedor.html" class="btn servicios-btn">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./images/servicios/bus.jpg" class="card-img-top" alt="Comedor"/>
+                            <div class="card-body">
+                                <h5 class="card-title servicios-title mt-2">Autobús</h5>
+                            </div>
+                            <div class="card-footer">
+                                <a href="./servicios/bus.html" class="btn servicios-btn">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./images/servicios/madrugadores.jpg" class="card-img-top" alt="Comedor"/>
+                            <div class="card-body">
+                                <h5 class="card-title servicios-title mt-2">Madrugadores</h5>
+                            </div>
+                            <div class="card-footer">
+                                <a href="./servicios/matinal.html" class="btn servicios-btn">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./images/servicios/orientacion.jpg" class="card-img-top" alt="Comedor"/>
+                            <div class="card-body">
+                                <h5 class="card-title servicios-title mt-2">Dpto. Orientación</h5>
+                            </div>
+                            <div class="card-footer">
+                                <a href="./servicios/orientacion.html" class="btn servicios-btn">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./images/servicios/tienda.jpg" class="card-img-top" alt="Comedor"/>
+                            <div class="card-body">
+                                <h5 class="card-title servicios-title mt-2">Tienda</h5>
+                            </div>
+                            <div class="card-footer">
+                                <a href="./servicios/tienda.html" class="btn servicios-btn">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./images/servicios/cantina.jpg" class="card-img-top" alt="Comedor"/>
+                            <div class="card-body">
+                                <h5 class="card-title servicios-title mt-2">Cantina</h5>
+                            </div>
+                            <div class="card-footer">
+                                <a href="./servicios/cantina.html" class="btn servicios-btn">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contacto -->
+        <div class="container-fluid" id="contacto">
+            <h2 style="color: #9dbe15;" class="mt-4 ms-4">CONTACTA CON NOSOTROS</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4 p-4">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3865.896144393566!2d-1.256277823577444!3d38.051567796166715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd647ed425284579%3A0xc1fae33ccb32d958!2sCES%20Vega%20Media!5e1!3m2!1ses!2ses!4v1733769153174!5m2!1ses!2ses"
+                        width="100%" 
+                        height="450" 
+                        style="border-radius: 10px; border: 0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="col-12 col-md-6 p-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Escribe tu email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" placeholder="Escribe tu número de teléfono">
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="privacidad" required>
+                            <label class="form-check-label" for="privacidad">
+                                Acepto la <a href="#" class="text-decoration-none text-color">Política de privacidad</a> y la <a href="#" class="text-decoration-none text-color">Cláusula de protección de datos</a> de este sitio.
+                            </label>
+                        </div>
+                        <button type="submit" class="btn servicios-btn w-100">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid bg-dark text-light">
+            <div class="row text-center text-md-start py-4">
+                <!-- Logo -->
+                <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-start align-items-center mb-md-0 d-none d-md-block pt-3 ps-5">
+                    <img src="./images/logos/grifo.png" alt="Logo" width="100" class="ms-5">
+                </div>
+                <!-- Dirección -->
+                <div class="col-12 col-md-3 mb-4 mb-md-0">
+                    <h6 style="color: #9dbe15;">Visítanos</h6>
+                    <p>CES VEGA MEDIA, S. COOP.</p>
+                    <p>Ctra. De Mula, 37 – Alguazas</p>
+                    <p>30560 – Murcia</p>
+                </div>
+                <!-- Contacto -->
+                <div class="col-12 col-md-3 mb-4 mb-md-0">
+                    <h6 style="color: #9dbe15;">Contacto</h6>
+                    <p>Tlfn: 968 620913</p>
+                    <p>
+                        <a href="mailto:vegamedia@ces-vegamedia.es" class="text-light text-decoration-none">vegamedia@ces-vegamedia.es</a>
+                    </p>
+                </div>
+                <!-- Redes sociales -->
+                <div class="col-12 col-md-3">
+                    <h6 style="color: #9dbe15;">Redes sociales</h6>
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <a href="https://www.instagram.com/cesvegamedia/" target="_blank" class="me-3">
+                            <img src="./images/logos/insta.png" alt="Instagram" width="40" class="logo">
+                        </a>
+                        <a href="https://www.facebook.com/CESVegaMedia" target="_blank" class="me-3">
+                            <img src="./images/logos/face.png" alt="Facebook" width="40" class="logo">
+                        </a>
+                        <a href="https://www.youtube.com/@cesvegamedia7490" target="_blank" class="me-3">
+                            <img src="./images/logos/yt.png" alt="Youtube" width="40" class="logo">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="./images/logos/tw.png" alt="Twitter" width="40" class="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
